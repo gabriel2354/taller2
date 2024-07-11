@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--barra de navegacion-->
+   
+
+    <nav class="navbar navbar-expand-sm bg-body-tertiary fondo1 d-flex justify-content-center">
+        <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+
+            <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link active  text-white" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="servicios.html">Servicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link  text-white" href="#">Productos</a>
+            </li>
+           
+            </ul>
+        </div>
+        </div>
+    </nav>
+   
+
+
+    <!-- contacto-->
+    <form class="row g-3 needs-validation fondo1 d-flex justify-content-center" novalidate>
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label text-white" >Nombre</label>
+          <input type="text" class="form-control" id="validationCustom01" value="gabriel" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom02" class="form-label text-white ">Apellido</label>
+          <input type="text" class="form-control " id="validationCustom02" value="moncayo" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustomUsername" class="form-label text-white">Correo</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend">@</span>
+            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+            <div class="invalid-feedback">
+              Please choose a username.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="validationCustom03" class="form-label text-white">Ciudad</label>
+          <input type="text" class="form-control" id="validationCustom03" required>
+          <div class="invalid-feedback">
+            Please provide a valid city.
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="validationCustom04" class="form-label text-white">Stado</label>
+          <select class="form-select" id="validationCustom04" required>
+            <option selected disabled value="">Provincia...</option>
+            <option> Esmeraldas</option>
+            <option> Quito</option>
+            <option> Guayaquil</option>
+            <option> Santo Domingo</option>
+          </select>
+          <div class="invalid-feedback">
+            Please select a valid state.
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="validationCustom05" class="form-label text-white">Numero Contacto</label>
+          <input type="text" class="form-control" id="validationCustom05" required>
+          <div class="invalid-feedback">
+            Please provide a valid zip.
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label text-white" for="invalidCheck">
+              Aceptar terminos y condiciones
+            </label>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Contactarnos</button>
+        </div>
+      </form>
+
+      <footer>
+        <div class="container-fluid bg-dark p-5 text-center">
+          <div class="row">
+            <div class="col-md-4"><a href="#" class="text-decoration-none text-success"><i class="bi bi-facebook"> <br><br>BMT Commodity Corp.
+              950 Third Avenue, 10th Floor
+              New York, NY 10022-2774
+              
+              Phone: (212) 302-4200
+              info@bmtcommoditycorp.com</i></a></div>
+            <div class="col-md-4"><a href="#" class="text-decoration-none text-success"><i class="bi bi-messenger"> <br><br>EcoGarden® Pesticide is an organic pesticide that provides superior control with multiple modes of action. It’s safe for humans and pets alike.</i></a></div>
+            <div class="col-md-4"><a href="#" class="text-decoration-none text-success"><i class="bi bi-whatsapp"> <br><br>BIO-D™ GROW POTS
+              Click here to visit BIO-D™ Grow Pots.</i></a></div>
+            
+
+          </div>
+        </div>
+      </footer>
+
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
