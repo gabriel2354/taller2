@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body class="fondo6">
 
@@ -31,7 +32,7 @@
                 <a class="nav-link text-white" href="productos.html">Productos</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-white" href="contactos.html">Contactos</a>
+                <a class="nav-link text-white" href="contactos.html">Registrarse</a>
             </li>
             </ul>
         </div>
@@ -80,7 +81,7 @@
               <img src="imagenes/servicio1.jpeg" class="card-img-top" alt="..." height="300" width="300">
               <div class="card-body bg-dark ">
                 <h2 class="text-white ">Selección Rigurosa de Plantas</h2>
-                <p class="card-text text-white"> Nuestras plantas son seleccionadas cuidadosamente por su salud y adaptabilidad al entorno local. Trabajamos con proveedores confiables que comparten nuestro compromiso con la sostenibilidad, garantizando que cada especie contribuya a la biodiversidad y sea capaz de prosperar con mínimos recursos. <br><br><br><br><br> <button type="button " class="btn btn-outline-dark " ><a href="contactos.html" class=" text-white">Contactanos</a></button></p>
+                <p class="card-text text-white"> Nuestras plantas son seleccionadas cuidadosamente por su salud y adaptabilidad al entorno local. Trabajamos con proveedores confiables que comparten nuestro compromiso con la sostenibilidad, garantizando que cada especie contribuya a la biodiversidad y sea capaz de prosperar con mínimos recursos. <br><br><br><br><br><button class="bg-dark text-white" id="limpieza-exteriores" onclick="agregarProducto('1','limpieza exteriores', 250)">Adquirir limpiezza-exteriores - $250</button></p>
               </div>
             </div>
 
@@ -91,7 +92,7 @@
               <img src="imagenes/servicio2.jpg" class="card-img-top" alt="..." height="300" width="300">
               <div class="card-body bg-dark">
                 <h2 class="text-white">Sistemas de Riego Eficientes y Duraderos:</h2>
-                <p class="card-text text-white "> Los sistemas de riego que ofrecemos están diseñados para ser eficientes en el uso del agua y duraderos en el tiempo. Utilizamos tecnologías avanzadas que permiten un control preciso del riego, asegurando que las plantas reciban la cantidad adecuada de agua sin desperdicios. <br><br><br><br> <button type="button " class="btn btn-outline-dark " ><a href="contactos.html" class=" text-white">Contactanos</a></button></p>
+                <p class="card-text text-white "> Los sistemas de riego que ofrecemos están diseñados para ser eficientes en el uso del agua y duraderos en el tiempo. Utilizamos tecnologías avanzadas que permiten un control preciso del riego, asegurando que las plantas reciban la cantidad adecuada de agua sin desperdicios. <br><br><br><br><button  class="bg-dark text-white" id="podada-cesped" onclick="agregarProducto('2','podada-cesped', 400)"> ADQUIRIR  PODADA-CESPED - $400</button></p>
               </div>
             </div>
 
@@ -101,7 +102,18 @@
               <img src="imagenes/servicio3.jpeg" class="card-img-top" alt="..." height="300" width="300">
               <div class="card-body bg-dark">
                 <h2 class="text-white">Herramientas y Accesorios Durable y Ecológicos: </h2>
-                <p class="card-text text-white" >  Las herramientas y accesorios que ofrecemos están diseñados para resistir el uso continuo y mantener su funcionalidad en condiciones diversas. Optamos por productos fabricados con materiales resistentes y respetuosos con el medio ambiente, promoviendo así prácticas de jardinería sostenible entre nuestros clientes <br><br><br><button type="button " class="btn btn-outline-dark " ><a href="contactos.html" class=" text-white">Contactanos</a></button></p>
+                <p class="card-text text-white" >  Las herramientas y accesorios que ofrecemos están diseñados para resistir el uso continuo y mantener su funcionalidad en condiciones diversas. Optamos por productos fabricados con materiales resistentes y respetuosos con el medio ambiente, promoviendo así prácticas de jardinería sostenible entre nuestros clientes <br><br><br><button  class="bg-dark text-white" id="servicio-limpieza-xpress" onclick="agregarProducto('3','servicio-limpieza-xpress', 100)">Adquirir  servicio limpieza- xpress - $100</button></p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-md-4">
+            <div class="card" >
+              <img src="imagenes/servicio3.jpeg" class="card-img-top" alt="..." height="300" width="300">
+              <div class="card-body bg-dark">
+                <h2 class="text-white">Herramientas y Accesorios Durable y Ecológicos: </h2>
+                <p class="card-text text-white" >  Las herramientas y accesorios que ofrecemos están diseñados para resistir el uso continuo y mantener su funcionalidad en condiciones diversas. Optamos por productos fabricados con materiales resistentes y respetuosos con el medio ambiente, promoviendo así prácticas de jardinería sostenible entre nuestros clientes <br><br><br><button  class="bg-dark text-white" id="Servicio-limpieza" onclick="agregarProducto('4','servicio-limpieza', 350)">Adquirir servicio de limpieza - $350</button></p>
               </div>
             </div>
 
@@ -112,6 +124,36 @@
         
 
       </div>
+      <br>
+      <br>
+      <br>
+
+      <section >
+        <table class="table" id="tabla "  >
+            <thead>
+              <tr>
+                <th>Producto</th>
+                <th>Cantidad</th>
+                <th>Precio</th>
+                <th>Total</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody id="tbody">
+            </tbody>
+            <tfoot>
+                <th>TOTAL</th>
+                <th></th>
+                <th></th>
+                <td id="total">0.00</td>
+                <td></td>
+            </tfoot>
+          </table>
+    </section>
+
+    
+    
+
 
       
 
@@ -132,10 +174,9 @@
           </div>
         </div>
       </footer>
-
-      
+  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
+    <Script src="productos.js"></Script>
     
 </body>
 </html>
